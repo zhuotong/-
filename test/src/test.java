@@ -23,14 +23,14 @@ public class test {
 	public static List<Map<String, Integer>> intz;
 	public static String[] strs;
 	
-	public static String first = "com.qianlong.android.R";
+	public static String first = "com.news.android.R";
 	private static BufferedReader br;
 	private static PrintWriter pw;
 	private static FilenameFilter filter;
 	
 	public static void main(String []args){
 		try {
-			Class< ?> clazz = Class.forName("com.qianlong.android.R");
+			Class< ?> clazz = Class.forName("com.news.android.R");
 			System.out.println(clazz.getSimpleName());
 			Class<?>[] classs = clazz.getClasses();
 			System.out.println(classs.length);
@@ -80,7 +80,7 @@ public class test {
 			System.out.println(has(2130903109));
 		}
 		System.out.println("//");
-		/*File file = new File("/media/备用/oldeclipse_android/智慧北京/src/com/qianlong/android/ui/main/MainActivity.java");
+		/*File file = new File("/media/备用/oldeclipse_android/新闻/src/com/qianlong/android/ui/main/MainActivity.java");
 		int num = getFileAndNum(file);
 		
 		switch (num) {
@@ -101,7 +101,7 @@ public class test {
 			break;
 		}*/
 		
-		File dir = new File("/media/备用/oldeclipse_android/智慧北京/src/com/qianlong/android");
+		File dir = new File("/media/备用/oldeclipse_android/新闻/src/com/qianlong/android");
 		changeMore(dir,0);
 	}
 	
